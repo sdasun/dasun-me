@@ -12,19 +12,20 @@
       <div class="flex flex-col md:flex-row gap-8 items-center md:items-start">
         <div class="flex-1 text-center md:text-left">
           <h1 class="text-5xl md:text-7xl font-bold tracking-tight mb-4">
-            Dasun <span class="gradient-text">Sameera</span>
+            Dasun <span class="gradient-text">Sameera</span> Weerasinghe
           </h1>
           <h2 class="text-xl md:text-2xl font-medium text-gray-600 dark:text-gray-300 mb-6">
-            Senior Tech Lead · Entrepreneur
+            Senior Software Engineer · Content Creator · Entrepreneur
             <span class="hidden md:inline mx-2 text-gray-300 dark:text-gray-700">|</span>
-            <span class="block md:inline mt-1 md:mt-0">Builder of Long‑Living Software</span>
+            <span class="block md:inline mt-1 md:mt-0">Building Long-Living Systems & Ideas</span>
           </h2>
           
-          <p class="text-lg text-gray-600 dark:text-gray-400 leading-relaxed max-w-2xl mx-auto md:mx-0 mb-8">
-            Self‑taught software engineer with 20+ years of experience spanning backend systems, 
-            frontend architectures, and cloud infrastructure. Passionate about building systems 
-            that blend engineering precision with human meaning.
-          </p>
+<p class="text-lg text-gray-600 dark:text-gray-400 leading-relaxed max-w-2xl mx-auto md:mx-0 mb-8">
+  Senior software engineer, content creator, and entrepreneur with over 20 years of experience.
+  I build software systems, run podcasts and YouTube channels, and create businesses that live
+  at the intersection of technology, thinking, and human meaning.
+</p>
+
 
           <div class="flex flex-wrap justify-center md:justify-start gap-4">
             <a
