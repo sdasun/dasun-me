@@ -39,7 +39,11 @@
           <Initiatives />
         </section>
 
-        <section id="journey" class="section-shell reveal-section reveal-delay-5">
+        <section id="projects" class="section-shell reveal-section reveal-delay-5">
+          <Projects />
+        </section>
+
+        <section id="journey" class="section-shell reveal-section reveal-delay-6">
           <Timeline />
         </section>
       </main>
@@ -54,6 +58,7 @@ import Hero from './components/Hero.vue';
 import TechStack from './components/TechStack.vue';
 import Interests from './components/Interests.vue';
 import Initiatives from './components/Initiatives.vue';
+import Projects from './components/Projects.vue';
 import Timeline from './components/Timeline.vue';
 import Footer from './components/Footer.vue';
 
@@ -62,6 +67,7 @@ const navItems = [
   { href: '#stack', label: 'Tech Stack' },
   { href: '#interests', label: 'Interests' },
   { href: '#work', label: 'Products' },
+  { href: '#projects', label: 'Projects' },
   { href: '#journey', label: 'Timeline' },
 ];
 </script>

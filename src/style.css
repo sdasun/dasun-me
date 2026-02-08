@@ -82,6 +82,10 @@
   animation-delay: 450ms;
 }
 
+.reveal-delay-6 {
+  animation-delay: 540ms;
+}
+
 @keyframes reveal-up {
   from {
     opacity: 0;
