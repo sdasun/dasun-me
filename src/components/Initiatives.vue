@@ -1,23 +1,26 @@
 <template>
   <section>
-    <h2 class="text-3xl font-bold mb-8 flex items-center gap-3">
-      <span class="w-8 h-1 bg-pink-600 rounded-full"></span>
+    <h2 class="section-title flex items-center gap-3">
+      <span class="w-8 h-1 bg-amber-600 rounded-full"></span>
       Initiatives & Products
     </h2>
+    <p class="section-subtitle">
+      Ventures and platforms I’ve built across software, publishing, and education.
+    </p>
     <div class="grid md:grid-cols-2 lg:grid-cols-3 gap-6">
       <div
         v-for="(initiative, i) in initiatives"
         :key="i"
-        class="glass-card rounded-2xl p-6 hover:shadow-2xl transition-all duration-300 group flex flex-col h-full"
+        class="rounded-2xl p-6 bg-slate-800/90 border border-slate-700 hover:border-cyan-400/60 hover:shadow-xl transition-all duration-300 group flex flex-col h-full"
       >
         <div class="flex-1">
-          <h3 class="text-xl font-bold mb-2 group-hover:text-blue-600 dark:group-hover:text-blue-400 transition-colors">
+          <h3 class="text-xl font-bold mb-2 text-slate-100 group-hover:text-cyan-300 transition-colors">
             {{ initiative.title }}
           </h3>
-          <p class="text-sm font-medium text-gray-500 dark:text-gray-400 mb-4 uppercase tracking-wider">
+          <p class="text-sm font-medium text-slate-400 mb-4 uppercase tracking-wider">
             {{ initiative.subtitle }}
           </p>
-          <p class="text-gray-600 dark:text-gray-300 text-sm leading-relaxed mb-4">
+          <p class="text-slate-300 text-sm leading-relaxed mb-4">
             {{ initiative.note }}
           </p>
         </div>
@@ -26,7 +29,8 @@
           :href="initiative.url"
           target="_blank"
           rel="noreferrer"
-          class="inline-flex items-center gap-2 text-sm font-semibold text-blue-600 dark:text-blue-400 hover:gap-3 transition-all"
+          :aria-label="`Visit ${initiative.title}`"
+          class="inline-flex items-center gap-2 text-sm font-semibold text-cyan-300 hover:gap-3 transition-all"
         >
           Visit Product
           <ExternalLink :size="16" />
@@ -69,6 +73,18 @@ const initiatives = [
     subtitle: "Web‑based Astrology Application",
     url: "https://www.kendare.com/",
     note: "Modern web version of Tharu Kirana",
+  },
+  {
+    title: "Homepage.lk",
+    subtitle: "Sri Lankan Home Portal",
+    url: "https://homepage.lk/",
+    note: "News & blog syndication, poya/thithi calendar, weather, and daily essentials",
+  },
+  {
+    title: "LankaPayslip",
+    subtitle: "Payroll & Tax Compliance Suite",
+    url: "https://lankapayslip.com/",
+    note: "Automates APIT/PAYE, generates RAMIS-compliant PAYE files, and manages EPF/ETF",
   },
   {
     title: "Code With Dasun",
